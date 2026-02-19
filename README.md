@@ -1,5 +1,5 @@
 # oh2notify
-Desktop notifications for WebSocket events — listens to a WebSocket endpoint and displays incoming messages as native desktop notifications:
+Desktop notifications for WebSocket events — listens to a WebSocket endpoint and displays incoming messages as native desktop notifications:<br />
 ![demo](./docs/demo.png)
 
 ## Requirements
