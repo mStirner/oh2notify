@@ -1,0 +1,12 @@
+# ~/.config/systemd/user/oh-notify.service
+[Unit]
+Description=OpenHaus WebSocket Notifications
+After=network.target
+
+[Service]
+ExecStart=~/projects/oh2notfiy/build/oh-notify ws://open-haus.lan/api/system/notifications
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

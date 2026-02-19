@@ -1,0 +1,22 @@
+{
+  "name": "oh2notfiy",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "notify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg notify.js --targets node18-linux-x64 --output build/oh-notify",
+    "dev": "nodemon notify.js ws://open-haus.lan/api/system/notifications",
+    "install": "bash -c ./install.sh"
+  },
+  "dependencies": {
+    "node-notifier": "^10.0.1",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
